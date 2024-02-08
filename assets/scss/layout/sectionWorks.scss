@@ -1,0 +1,100 @@
+.works {
+    .work__items {
+        display: grid;
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+        @include laptop{
+            grid-template-columns: repeat(3, 1fr);
+         }
+
+        @include desktop {
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+       
+
+        .work__item {
+            cursor: pointer;
+            margin-top: 20px;
+            @include tablet{
+                margin-top: initial;
+            }
+            .link__title {
+                margin-bottom: 15px;
+                display: block;
+                text-transform: capitalize;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .galery {
+                overflow: hidden;
+                position: relative;
+                &:hover {
+                    .images {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .images{
+                    position: relative;
+                    @include transition();
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-color: #14191bb8;
+                        z-index: 1;
+                        @include transition();
+                    }
+
+                    .image {
+                        img {
+                            aspect-ratio: 1;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+                    }
+                }
+
+                .detailButton {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    box-sizing: border-box;
+                    padding: 0.75em;
+                    z-index: 1;
+                    text-transform: uppercase;
+                    border: 0.2em solid $border_color;
+                    @include transition();
+                    font-weight: bold;
+                    @include tablet{
+                        padding: 10px;
+                        border-width: 2px;
+                        font-weight: initial;
+                        font-size: 14px;
+                    }
+                    @include desktop{
+                        font-weight: bold;
+                        font-size: initial;
+                        padding: 0.75em;
+                        border-width: 0.2em;
+                    }
+                    &:hover {
+                        border-color: $button_color;
+                        color: $button_color;
+                        background-color: #00000063;
+                    }
+                }
+            }
+        }
+    }
+}

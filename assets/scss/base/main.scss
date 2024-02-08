@@ -1,0 +1,139 @@
+:root {
+    scrollbar-color: $button_color rgb(20, 25, 27) ;
+    scrollbar-width: thin ;
+}
+html {
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+    &._showMobileNav{
+        overflow: hidden;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.51);
+            z-index: 1;
+        }
+        .header{
+            background: transparent;
+            padding: 0;
+            &::before{
+                background: #000;
+            }
+            .closeNavMenu{
+                display: block; 
+            }
+            .logo{
+                display: none;
+            }
+        }
+         
+        .navigation{
+            right: 0;
+        }
+    }
+
+
+  }
+
+
+body{
+    font-family: $font-family;
+    background-color: $background_color;
+    color: $white_color;
+    transition: background 0.3s linear, color 0.3s linear;
+}
+main{
+    &.container{
+        flex-direction: column;
+        padding-top: 55px;
+        position: relative;
+        @include laptop{
+            padding-top: 65px;
+        }
+    }
+}
+
+.particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    z-index: -2;
+}
+
+
+.intro {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #14191b;
+    transition: 0.7s;
+    z-index: 101;
+    font-size: 27px;
+    @include laptop{
+        font-size: 47px;
+    }
+}
+
+
+
+
+.section{
+    margin: 20px 0;
+    @include laptop{
+        margin: 40px 0;
+    }
+    
+  
+    .section-title{
+        position: relative;
+        margin: 16px 0 25px 0;
+        padding-bottom: 10px;
+        font-size: 32px;
+        color: $button_color;
+        text-align: center;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 0.18rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 0;
+            background-color: $button_color;
+        }
+        @include laptop{
+            margin: 16px 0 45px 0;
+        }
+    }
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    padding: 0 25px;
+    width: 100%;
+    @include tablet {
+        max-width: 700px;
+        padding: 0;
+    }
+    @include laptop {
+        max-width: 900px;
+    }
+    @include desktop {
+        max-width: 1440px;
+    }
+}

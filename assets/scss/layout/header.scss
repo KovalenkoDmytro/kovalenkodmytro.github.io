@@ -1,0 +1,120 @@
+.header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: background 0.3s linear, color 0.3s linear;
+    background-color: $secondary_color;
+    height: 55px;
+    @include laptop{
+        height: 65px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100vw;
+        left: 50%;
+        margin-left: -50vw;
+        background-color: $secondary_color;
+        z-index: -1;
+    }
+    
+
+    .navigation{
+        @media(max-width: 978px){
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            width: calc(100vw - 50px);
+            right: -100%;
+            background-color: $secondary_color;
+            height: 100dvh;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+            padding: 16px 16px 120px 16px;
+            transition: right 200ms ease 200ms;
+            .nav_list{
+                .nav_item{
+                    .nav_link{
+                        padding: 15px 0;
+                        font-weight: 400;
+                        display: flex;
+                        line-height: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        border-bottom: 1px solid $link_color_hover;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }    
+        @include laptop{
+            display: flex;
+            align-items: center;
+            .nav_list{
+                display: flex;
+                .nav_item{
+                    .nav_link{
+                        display: block;
+                        padding-bottom: 10px;
+                        margin: 20px 15px 15px 20px;
+                        position: relative;
+                        text-decoration: none;
+                        cursor: pointer;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            transform: scaleX(0);
+                            height: 1px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: $button_color;
+                            transform-origin: bottom right;
+                            transition: all 0.15s cubic-bezier(0.33, 1, 0.68, 1);
+                        }
+                        &.active,
+                        &:hover{
+                            color: $button_color;
+                            &::before{
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .closeNavMenu{
+        display: none; 
+    }
+    .nav__toggle{
+        @include laptop{
+           display: none; 
+        }
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        img {
+            width: 40px;
+            @include laptop{
+                width: 50px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+

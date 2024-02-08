@@ -1,0 +1,34 @@
+.btn{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: $border_radius;
+  border: none;
+  margin: 10px 0 ;
+  padding: 10px 25px;
+  cursor: pointer;
+  width: max-content;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  @include transition();
+
+  @include tablet{
+    padding: 15px 25px;
+  }
+
+  &._second{
+    background-color: $button_text_color;
+    color: $button_color;
+  }
+  &._solid{
+    color: $button_text_color;
+    background-color: $button_color;
+    &:hover{
+      background-color: $button_text_color;
+      color: $button_color;
+    }
+  }
+}

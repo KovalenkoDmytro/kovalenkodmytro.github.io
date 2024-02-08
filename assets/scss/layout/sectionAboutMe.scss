@@ -1,0 +1,80 @@
+.about{
+    @include laptop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    @include desktop{
+        height: calc(100dvh - 65px);
+    }
+    .about__container{
+       
+    
+        @include desktop{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin: 0 auto;
+            grid-template-columns: 40% 60%;
+            max-width: 1100px;
+        }
+        
+        .about__img{
+            position: relative;
+            z-index: 1;
+            max-width: 345px;
+            margin: 0 auto;
+            @include tablet{
+                max-width: 222px;
+                float: left;
+                margin-right: 25px;
+            }
+            @include desktop{
+                max-width: 475px;
+                float: initial;
+                margin-right: auto;
+            }
+            img{
+                border-radius: $border_radius;
+            }
+        }
+        .about__content{
+            background: #0c0c0cd1;
+            border-radius: 10px;
+            margin-top: 30px;
+            @include tablet{
+                margin-top: initial;
+            }
+            @include laptop{
+                font-size: 18px;
+            }
+
+            @include desktop{
+                margin-top: initial;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                  padding: 25px;
+                margin-left: 60px;
+            }
+            
+            .about__text{
+                text-align: justify;
+                margin-bottom: 25px;
+                @include desktop{
+                    margin-bottom: initial;
+                }
+                p + p{
+                    margin-top: 15px;
+                }
+            }
+            .btn{
+                margin: 30px auto 0;
+               
+            }
+        }
+    }
+}
