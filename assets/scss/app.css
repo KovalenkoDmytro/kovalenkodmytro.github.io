@@ -655,6 +655,9 @@ template {
     border-bottom: 1px solid #00cf8f;
     font-size: 16px;
   }
+  .header .navigation .resumeLink {
+    margin: 40px auto 0 auto;
+  }
 }
 @media (min-width: 979px) {
   .header .navigation {
@@ -690,6 +693,9 @@ template {
   .header .navigation .nav_list .nav_item .nav_link.active::before, .header .navigation .nav_list .nav_item .nav_link:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  .header .navigation .resumeLink {
+    display: none;
   }
 }
 .header .closeNavMenu {
