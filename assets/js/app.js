@@ -22,7 +22,7 @@ toInvoke(() => {
     window.addEventListener("DOMContentLoaded", () => {
         const intro = document.querySelector("#intro");
         setTimeout(() => {
-            intro.style.top = "-100vh";
+            intro.style.top = "-100%";
         }, 1500);
     });
 
