@@ -92,7 +92,7 @@ toInvoke(()=>{
       const id = entry.target.getAttribute('id')
   
       let activeTab = Array.from(navListItems).filter(item=>{
-        const href = item.getAttribute('href')
+        const href = item.getAttribute('data-href')
         if(href === `#${id}`){
           return item
         }
@@ -126,7 +126,7 @@ toInvoke(()=>{
   
   navListItems.forEach(link=>{
     link.addEventListener('click',function(){
-      const sectionId = this.getAttribute('href').replace('#','').trim();
+      const sectionId = this.getAttribute('data-href').replace('#','').trim();
      
       if(sectionId ==='works'){
         smoothScroll({yPos: document.querySelector('#works').offsetTop - 80});
