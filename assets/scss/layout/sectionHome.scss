@@ -53,6 +53,11 @@
                 @include desktop{
                     line-height: 1.6;
                 }
+                ._mobile{
+                    @include laptop{
+                        display: none;
+                    }
+                }
             }
         }
         

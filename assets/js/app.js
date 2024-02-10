@@ -50,7 +50,7 @@ toInvoke(() => {
         loop: true,
         autoStart: true,
     });
-}, 'all', '#autoWrite')
+}, 'desktop', '#autoWrite')
 
 // to add animation while content appears on the page
 toInvoke(() => {
