@@ -730,7 +730,6 @@ template {
   margin: 10px 0;
   padding: 10px 25px;
   cursor: pointer;
-  width: -moz-max-content;
   width: max-content;
   text-align: center;
   font-size: 18px;
@@ -817,10 +816,8 @@ template {
 }
 .works .work__items .work__item .galery .images .image img {
   aspect-ratio: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  object-fit: cover;
+  object-position: top;
 }
 .works .work__items .work__item .galery .detailButton {
   display: block;
@@ -870,9 +867,7 @@ template {
   position: relative;
   display: flex;
   overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   gap: 20px;
 }
 @media (min-width: 979px) {
@@ -1258,7 +1253,9 @@ template {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  -ms-touch-action: none;
   touch-action: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1284,6 +1281,10 @@ template {
 .slick-track,
 .slick-slide,
 .slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -1474,6 +1475,10 @@ template {
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   /* Prevent artifacts in Mozilla Firefox: */
   backface-visibility: hidden;
@@ -1499,6 +1504,7 @@ template {
   opacity: 0;
   display: none;
   direction: ltr;
+  -ms-touch-action: pinch-zoom;
   touch-action: pinch-zoom;
 }
 
@@ -1509,6 +1515,7 @@ template {
   /* Set the carousel width/height ratio to 16/9: */
   padding-bottom: 56.25%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  -ms-touch-action: pan-y pinch-zoom;
   touch-action: pan-y pinch-zoom;
   display: block;
 }
@@ -1534,6 +1541,10 @@ template {
   float: left;
   height: 100%;
   text-align: center;
+  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   overflow: scroll;
 }
@@ -1567,6 +1578,8 @@ template {
   justify-content: center;
   top: 50%;
   left: 15px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #fff;
@@ -1627,6 +1640,10 @@ template {
 .blueimp-gallery-controls > .play-pause {
   display: flex;
   /* Fix z-index issues (controls behind slide element) on Android: */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
   transform: translateZ(0);
 }
 
@@ -1644,7 +1661,9 @@ template {
 .blueimp-gallery > .close,
 .blueimp-gallery > .play-pause {
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -1670,13 +1689,12 @@ template {
   position: relative;
 }
 
-@supports ((-o-object-fit: contain) or (object-fit: contain)) {
+@supports (object-fit: contain) {
   .blueimp-gallery-contain > .slides > .slide > .slide-content,
   .blueimp-gallery-contain > .slides > .slide > .slide-content > img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -1693,4 +1711,6 @@ template {
   transform: rotate(-180deg);
 }
 
-/*Contact*//*# sourceMappingURL=app.css.map */
+/*Contact*/
+
+/*# sourceMappingURL=app.css.map */
