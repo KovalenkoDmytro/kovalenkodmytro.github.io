@@ -10,45 +10,4 @@
 @import "layout/sectionHome";
 @import "layout/sectionAboutMe";
 @import "layout/footer";
-@import "vendor/slickSlider/style";
-@import "vendor/blueIMP";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Contact*/
-// .contact_input {
-//     width: 100%;
-//     font-size: var(--normal-font-size);
-//     font-weight: var(--font-semi);
-//     padding: 1rem;
-//     border-radius: 0.5rem;
-//     border: 1.5px solid var(--second-color);
-//     outline: none;
-//     margin-bottom: var(--mb-4);
-// }
-
-// .contact_button {
-//     display: block;
-//     border: none;
-//     outline: none;
-//     font-size: var(--normal-font-size);
-//     cursor: pointer;
-//     margin-left: auto;
-// }
-
-// .captcha {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+@import "vendor/PhotoSwiper/style";
