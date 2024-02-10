@@ -43,7 +43,7 @@ toInvoke(() => {
 
 // to add animation while content appears on the page
 toInvoke(() => {
-    const sr = ScrollReveal({
+    const sr = ScrollrevealMin({
         origin: "top",
         distance: "40px",
         duration: 2000,
