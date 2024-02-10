@@ -22,13 +22,9 @@ toInvoke(() => {
     window.addEventListener("DOMContentLoaded", () => {
         const intro = document.querySelector("#intro");
         setTimeout(() => {
-            intro.style.top = "-900px";
+            intro.style.top = "-100%";
 
         }, 1500);
-        setTimeout(() => {
-            intro.style.display = "none";
-
-        }, 2400);
     });
 
 }, 'all', '#intro')
