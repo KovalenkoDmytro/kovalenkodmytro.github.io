@@ -13,7 +13,7 @@ const toInvoke = function (callback, view = 'all', selector) {
     }
 }
 toInvoke(() => {
-    document.addEventListener("DOMContentLoaded", (event) => {
+    document.addEventListener("DOMContentLoaded", () => {
         console.log("DOM fully loaded and parsed");
         new Blazy({
             selector: '.b-lazy'
