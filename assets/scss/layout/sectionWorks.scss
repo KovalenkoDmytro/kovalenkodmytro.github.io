@@ -70,23 +70,24 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                     box-sizing: border-box;
-                    padding: 0.75em;
+                    padding: 10px 15px;
+                    font-size: 14px;
                     z-index: 1;
                     text-transform: uppercase;
-                    border: 0.2em solid $border_color;
+                    background-color: $white_color;
+                    color: #000000;
                     @include transition();
-                    font-weight: bold;
+
                     @include tablet{
                         padding: 10px;
                         border-width: 2px;
-                        font-weight: initial;
                         font-size: 14px;
                     }
-                    @include desktop{
-                        font-weight: bold;
+                    @include laptop{
                         font-size: initial;
-                        padding: 0.75em;
-                        border-width: 0.2em;
+                        background-color: initial;
+                        border: 2px solid $gray_color;
+                        color: $white_color;
                     }
                     &:hover {
                         border-color: $button_color;

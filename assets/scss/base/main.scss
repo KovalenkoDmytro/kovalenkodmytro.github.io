@@ -57,7 +57,17 @@ main{
         }
     }
 }
-
+img{
+    &.b-lazy{
+        max-width: max-content;
+        margin: auto;
+        min-height: 340px;
+        &.b-loaded{
+            max-width: initial;
+            margin: initial;
+        }
+    }
+}
 .particles-js {
     position: fixed;
     top: 0;

@@ -30,7 +30,6 @@
 .blueimp-gallery > .slides > .slide > .slide-content,
 .blueimp-gallery > .slides > .slide > .slide-content > img {
   margin: auto;
-  width: auto;
   height: auto;
   max-width: 100%;
   opacity: 1;
@@ -106,7 +105,6 @@
   padding: 0;
   height: 45px;
   width: 45px;
-  display: flex;
   align-items: center;
   justify-content: center;
   top: 50%;
