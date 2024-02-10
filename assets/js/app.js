@@ -33,7 +33,6 @@ toInvoke(() => {
 toInvoke(() => {
 
     const app = document.getElementById("autoWrite");
-
     new Typewriter(app, {
         strings: ["Full-stack developer"],
         loop: true,
