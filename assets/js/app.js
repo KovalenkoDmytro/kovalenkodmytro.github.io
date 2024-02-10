@@ -12,6 +12,17 @@ const toInvoke = function (callback, view = 'all', selector) {
         }
     }
 }
+toInvoke(() => {
+    document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+        new Blazy({
+            selector: '.b-lazy'
+            ,
+        });
+    });
+}, 'all', 'main')
+
+
 
 toInvoke(() => {
     particlesJS.load("particles-js", "assets/particles.json");
