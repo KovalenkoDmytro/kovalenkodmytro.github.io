@@ -3,14 +3,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-      
     }
-    @include desktop{
-        height: calc(100dvh - 65px);
-    }
+
     .about__container{
-       
-    
         @include desktop{
             display: grid;
             justify-content: center;
@@ -27,7 +22,7 @@
             max-width: 345px;
             margin: 0 auto;
             @include tablet{
-                max-width: 222px;
+                max-width: 258px;
                 float: left;
                 margin-right: 25px;
             }

@@ -1,50 +1,10 @@
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(calc(-100% - 20px));
-    }
-}
-
-
-
 .skills__wrapper {
     position: relative;
     display: flex;
     overflow: hidden;
     user-select: none;
     gap: 20px;
-    @include laptop{
-        &:hover {
-            .skill__items.marquee {
-                animation-play-state: paused;
-            }
-        }
-        &:before,
-        &:after {
-            content: "";
-            height: 100%;
-            top: 0;
-            width: 10%;
-            position: absolute;
-            z-index: 1;
-            pointer-events: none;
-        }
-    
-        &:before {
-            left: 0;
-            background: linear-gradient(90deg, rgb(12, 12, 12) 0%, rgba(255, 255, 255, 0) 100%)
-        }
-    
-        &:after {
-            right: 0;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(12, 12, 12) 100%)
-        }
-        
-    }
-    
+
 
     .skill__items {
         flex-shrink: 0; 
@@ -58,11 +18,7 @@
         }
 
         @include laptop{
-            display: flex;
-            flex-wrap: wrap;
             gap: 20px;
-            counter-reset: item;
-            justify-content: space-around;
         }
         
         &[aria-hidden="true"]{
@@ -71,12 +27,7 @@
             display: flex;
           }  
         }    
-        &.marquee {
-            @include laptop{
-                animation: scroll 35s linear infinite;
-            }
-            
-        }
+
         .skill__item {
             cursor: pointer;
             display: flex;
@@ -94,9 +45,6 @@
             @include laptop{
                 font-size: 20px;
                 margin: 10px 0 10px 30px ;
-                &:hover {
-                    transform: scale(1.15);
-                }
             }
 
             @include desktop{
