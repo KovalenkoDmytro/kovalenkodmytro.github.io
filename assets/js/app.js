@@ -305,7 +305,7 @@ toInvoke(() => {
         }, 1500);
     });
 
-}, 'all', '#intro')
+}, 'desktop', '#intro')
 
 
 /*Auto write text*/
