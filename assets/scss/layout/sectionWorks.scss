@@ -4,15 +4,16 @@
         @include tablet{
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 30px;
-            grid-row-gap: 20px;
+            grid-row-gap: 50px;
         }
         @include laptop{
             grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 45px;
          }
 
         @include desktop {
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 30px;
+            grid-row-gap: 50px;
         }
        
 
@@ -63,37 +64,22 @@
                     }
                 }
 
-                .detailButton {
+                .btn {
                     display: block;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     box-sizing: border-box;
-                    padding: 10px 15px;
                     font-size: 14px;
                     z-index: 1;
-                    text-transform: uppercase;
-                    background-color: $white_color;
-                    color: #000000;
-                    @include transition();
 
-                    @include tablet{
-                        padding: 10px;
-                        border-width: 2px;
-                        font-size: 14px;
-                    }
+
                     @include laptop{
-                        font-size: initial;
-                        background-color: initial;
-                        border: 2px solid $gray_color;
-                        color: $white_color;
+                        font-size: 18px;
                     }
-                    &:hover {
-                        border-color: $button_color;
-                        color: $button_color;
-                        background-color: #00000063;
-                    }
+
+
                 }
             }
         }

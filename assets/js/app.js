@@ -342,7 +342,7 @@ toInvoke(() => {
 // to show galery when click on work thile 
 toInvoke(() => {
 
-    const showWorkButtons = document.querySelectorAll('#works .work__item .detailButton')
+    const showWorkButtons = document.querySelectorAll('#works .work__item .btn')
 
 
     showWorkButtons.forEach(function (button) {

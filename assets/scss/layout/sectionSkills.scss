@@ -1,74 +1,92 @@
-.skills__wrapper {
+.section.skills{
     position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 20px;
+    padding: 5px 0 30px;
+    @include laptop{
+        padding: 30px 0 40px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100vw;
+        left: 50%;
+        margin-left: -50vw;
+        background-color: $secondary_color;
+        z-index: -1;
+    }
+    .skills__wrapper {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: 20px;
 
 
-    .skill__items {
-        flex-shrink: 0; 
-        min-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);    
-        row-gap: 15px;
+        .skill__items {
+            flex-shrink: 0;
+            min-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 15px;
 
-        @include tablet{
-            grid-template-columns: repeat(3, 1fr);    
-        }
+            @include tablet{
+                grid-template-columns: repeat(3, 1fr);
+            }
 
-        @include laptop{
-            gap: 20px;
-        }
-        
-        &[aria-hidden="true"]{
-          display: none;
-          @include laptop{
-            display: flex;
-          }  
-        }    
+            @include laptop{
+                gap: 20px;
+            }
 
-        .skill__item {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            flex: 0 0 auto;
-            color: $white_color;
-            transition: all 0.1s ease-in-out;
-            &:last-child{
+            &[aria-hidden="true"]{
                 display: none;
                 @include laptop{
                     display: flex;
                 }
             }
-            @include laptop{
-                font-size: 20px;
-                margin: 10px 0 10px 30px ;
-            }
 
-            @include desktop{
-                margin: 10px 0 10px 50px ;
-                font-size: 25px;
-            }
-            
-
-            .icon{
-                width: 25px;
-                height: 25px;
+            .skill__item {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                flex: 0 0 auto;
+                color: $white_color;
+                transition: all 0.1s ease-in-out;
+                &:last-child{
+                    display: none;
+                    @include laptop{
+                        display: flex;
+                    }
+                }
                 @include laptop{
-                    width: 40px;
-                    height: 40px;
+                    font-size: 20px;
+                    margin: 10px 0 0 30px;
                 }
+
                 @include desktop{
-                    width: 50px;
-                    height: 50px;
+                    font-size: 25px;
                 }
-              
-            }
-            .skills_name{
-                margin-left: 10px;
+
+
+                .icon{
+                    width: 25px;
+                    height: 25px;
+                    @include laptop{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    @include desktop{
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                }
+                .skills_name{
+                    margin-left: 10px;
+                }
             }
         }
     }
+
 }
+

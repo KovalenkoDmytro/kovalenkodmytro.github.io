@@ -3,7 +3,6 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  border-radius: $border_radius;
   border: none;
   margin: 10px 0 ;
   padding: 10px 25px;
@@ -13,22 +12,27 @@
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
+  text-transform: capitalize;
   @include transition();
 
   @include tablet{
     padding: 15px 25px;
   }
 
-  &._second{
-    background-color: $button_text_color;
-    color: $button_color;
-  }
   &._solid{
     color: $button_text_color;
     background-color: $button_color;
     &:hover{
       background-color: $button_text_color;
-      color: $button_color;
+      color: #000000;
+    }
+  }
+  &._second{
+    color: #000000;
+    background-color: $button_text_color;
+    &:hover{
+      background-color: $button_color;
+      color: $button_text_color;
     }
   }
 }

@@ -69,7 +69,7 @@ img{
     }
 }
 .particles-js {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -115,6 +115,7 @@ img{
         font-size: 32px;
         color: $button_color;
         text-align: center;
+        text-transform: uppercase;
         &::after {
             position: absolute;
             content: "";
