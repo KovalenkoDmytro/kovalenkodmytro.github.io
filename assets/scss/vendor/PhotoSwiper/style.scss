@@ -96,21 +96,14 @@
 }
 
 .pswp--click-to-zoom.pswp--zoom-allowed .pswp__img {
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
 
 .pswp--click-to-zoom.pswp--zoomed-in .pswp__img {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
   cursor: grab;
 }
 
 .pswp--click-to-zoom.pswp--zoomed-in .pswp__img:active {
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
@@ -118,8 +111,6 @@
 .pswp--no-mouse-drag.pswp--zoomed-in .pswp__img,
 .pswp--no-mouse-drag.pswp--zoomed-in .pswp__img:active,
 .pswp__img {
-  cursor: -webkit-zoom-out;
-  cursor: -moz-zoom-out;
   cursor: zoom-out;
 }
 
@@ -301,7 +292,6 @@ div.pswp__img--placeholder,
 */
 .pswp__button--arrow {
   position: absolute;
-  top: 0;
   width: 75px;
   height: 100px;
   top: 50%;
@@ -338,11 +328,11 @@ div.pswp__img--placeholder,
 
 .pswp__button--arrow--prev {
   right: auto;
-  left: 0px;
+  left: 0;
 }
 
 .pswp__button--arrow--next {
-  right: 0px;
+  right: 0;
 }
 .pswp__button--arrow--next .pswp__icn {
   left: auto;
