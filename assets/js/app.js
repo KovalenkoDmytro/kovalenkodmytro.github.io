@@ -278,8 +278,7 @@ const toInvoke = function (callback, view = 'all', selector) {
 
 
 toInvoke(() => {
-    document.addEventListener("DOMContentLoaded", () => {
-        console.log("DOM fully loaded and parsed");
+    window.addEventListener("DOMContentLoaded", () => {
         new Blazy({
             selector: '.b-lazy'
             ,
@@ -290,7 +289,10 @@ toInvoke(() => {
 
 
 toInvoke(() => {
-    particlesJS.load("particles-js", "assets/particles.json");
+    window.addEventListener("DOMContentLoaded", () => {
+        particlesJS.load("particles-js", "assets/particles.json");
+    });
+
 }, 'all', '#particles-js')
 
 /*Intro animation*/
@@ -298,7 +300,7 @@ toInvoke(() => {
     window.addEventListener("DOMContentLoaded", () => {
         const intro = document.querySelector("#intro");
         setTimeout(() => {
-            intro.style.top = "-100%";
+            intro.style.top = "-100dvh";
 
         }, 1500);
     });
