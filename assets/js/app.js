@@ -173,22 +173,22 @@ const dataWorks = {
             "height": "8961"
         }
     ],
-    "solux" : [
+    "sollux" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/solux/1.webp",
-            "alt": "solux",
+            "src": "https://dmytrokovalenko.online/assets/img/works/sollux/1.webp",
+            "alt": "sollux",
             "width": "1286",
             "height": "9620"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/solux/2.webp",
-            "alt": "solux",
+            "src": "https://dmytrokovalenko.online/assets/img/works/sollux/2.webp",
+            "alt": "sollux",
             "width": "1258",
             "height": "5619"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/solux/3.webp",
-            "alt": "solux",
+            "src": "https://dmytrokovalenko.online/assets/img/works/sollux/3.webp",
+            "alt": "sollux",
             "width": "1342",
             "height": "16383"
         }
