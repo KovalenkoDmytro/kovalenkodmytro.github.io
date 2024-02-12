@@ -37,8 +37,8 @@ if(!empty($visitor['visitor'])){
 
 
     $stmt = $dbConnection -> prepare("INSERT INTO visitors ( browser, languages, screenWidth, city, country, continent, ip, province) VALUES (?, ?, ?, ?,?,?,?,?)");
-    $stmt -> bind_param("ssssssis", $browser, $languages, $screenWidth, $city, $country, $continent, $ip, $province);
-
+    $stmt -> bind_param("ssisssss", $browser, $languages, $screenWidth, $city, $country, $continent, $ip, $province);
+    var_dump($visitor_ip);
     $browser= $visitor_browser;
     $languages=$visitor_languages;
     $screenWidth = $visitor_screenWidth;
