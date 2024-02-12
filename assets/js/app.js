@@ -364,7 +364,6 @@ toInvoke(() => {
         };
         fetch('/visitors.php', requestOptions)
             .then(response => response.json())
-            .then(data => console.log(data));
     }
 
     window.addEventListener("DOMContentLoaded", async () => {
