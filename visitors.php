@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: /');
-header('Content-Type: application/json; charset=utf-8');
+
 
 if(empty($_SERVER['CONTENT_TYPE'])) {
     $type = "application/x-www-form-urlencoded";
@@ -25,15 +25,6 @@ if(!empty($visitor['visitor'])){
         echo "Failed to connect to MySQL: " . $dbConnection -> connect_error;
         exit();
     }
-
-
-    $result = $dbConnection -> query("SELECT ip FROM visitors where ip = '$visitor_ip'");
-
-    if (empty($result)) {
-        $dbConnection -> close();
-        exit();
-    }
-
 
 
     $stmt = $dbConnection -> prepare("INSERT INTO visitors ( browser, languages, screenWidth, city, country, continent, ip, province) VALUES (?, ?, ?, ?,?,?,?,?)");
