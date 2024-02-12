@@ -3,19 +3,19 @@
 const dataWorks = {
     "comel" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/comel/1.webp",
+            "src": "/assets/img/works/comel/1.webp",
             "alt": "comel",
             "width": "1792",
             "height": "4048"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/comel/2.webp",
+            "src": "/assets/img/works/comel/2.webp",
             "alt": "comel",
             "width": "1504",
             "height": "5569"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/comel/3.webp",
+            "src": "/assets/img/works/comel/3.webp",
             "alt": "comel",
             "width": "1492",
             "height": "5192"
@@ -23,19 +23,19 @@ const dataWorks = {
     ],
     "eviso" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/eviso/1.webp",
+            "src": "/assets/img/works/eviso/1.webp",
             "alt": "comel",
             "width": "2560",
             "height": "6732"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/eviso/2.webp",
+            "src": "/assets/img/works/eviso/2.webp",
             "alt": "comel",
             "width": "1744",
             "height": "6067"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/eviso/3.webp",
+            "src": "/assets/img/works/eviso/3.webp",
             "alt": "comel",
             "width": "1726",
             "height": "11201"
@@ -43,19 +43,19 @@ const dataWorks = {
     ],
     "ezebra" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/ezebra/1.webp",
+            "src": "/assets/img/works/ezebra/1.webp",
             "alt": "ezebra",
             "width": "2240",
             "height": "6781"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/ezebra/2.webp",
+            "src": "/assets/img/works/ezebra/2.webp",
             "alt": "ezebra",
             "width": "1824",
             "height": "5934"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/ezebra/3.webp",
+            "src": "/assets/img/works/ezebra/3.webp",
             "alt": "ezebra",
             "width": "1842",
             "height": "7592"
@@ -63,31 +63,31 @@ const dataWorks = {
     ],
     "nextEstate" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nextEstate/1.webp",
+            "src": "/assets/img/works/nextEstate/1.webp",
             "alt": "gunfire",
             "width": "2537",
             "height": "9401"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nextEstate/2.webp",
+            "src": "/assets/img/works/nextEstate/2.webp",
             "alt": "gunfire",
             "width": "2183",
             "height": "3311"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nextEstate/3.webp",
+            "src": "/assets/img/works/nextEstate/3.webp",
             "alt": "gunfire",
             "width": "2560",
             "height": "9079"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nextEstate/4.webp",
+            "src": "/assets/img/works/nextEstate/4.webp",
             "alt": "gunfire",
             "width": "2560",
             "height": "2482"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nextEstate/4.webp",
+            "src": "/assets/img/works/nextEstate/4.webp",
             "alt": "gunfire",
             "width": "2560",
             "height": "4543"
@@ -95,19 +95,19 @@ const dataWorks = {
     ],
     "gunfire" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/gunfire/1.webp",
+            "src": "/assets/img/works/gunfire/1.webp",
             "alt": "gunfire",
             "width": "2560",
             "height": "5620"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/gunfire/2.webp",
+            "src": "/assets/img/works/gunfire/2.webp",
             "alt": "gunfire",
             "width": "2584",
             "height": "6375"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/gunfire/3.webp",
+            "src": "/assets/img/works/gunfire/3.webp",
             "alt": "gunfire",
             "width": "1360",
             "height": "3824"
@@ -115,19 +115,19 @@ const dataWorks = {
     ],
     "nizel" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nizel/1.webp",
+            "src": "/assets/img/works/nizel/1.webp",
             "alt": "nizel",
             "width": "1510",
             "height": "5933"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nizel/2.webp",
+            "src": "/assets/img/works/nizel/2.webp",
             "alt": "nizel",
             "width": "1629",
             "height": "10102"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/nizel/3.webp",
+            "src": "/assets/img/works/nizel/3.webp",
             "alt": "nizel",
             "width": "1545",
             "height": "4408"
@@ -135,19 +135,19 @@ const dataWorks = {
     ],
     "pakolorente" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/pakolorente/1.webp",
+            "src": "/assets/img/works/pakolorente/1.webp",
             "alt": "pakolorente",
             "width": "2002",
             "height": "5708"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/pakolorente/2.webp",
+            "src": "/assets/img/works/pakolorente/2.webp",
             "alt": "pakolorente",
             "width": "1896",
             "height": "4712"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/pakolorente/3.webp",
+            "src": "/assets/img/works/pakolorente/3.webp",
             "alt": "pakolorente",
             "width": "1979",
             "height": "8961"
@@ -155,19 +155,19 @@ const dataWorks = {
     ],
     "pinali" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/pinali/1.webp",
+            "src": "/assets/img/works/pinali/1.webp",
             "alt": "pinali",
             "width": "1920",
             "height": "5520"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/pinali/2.webp",
+            "src": "/assets/img/works/pinali/2.webp",
             "alt": "pinali",
             "width": "1273",
             "height": "3922"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/pinali/3.webp",
+            "src": "/assets/img/works/pinali/3.webp",
             "alt": "pinali",
             "width": "1979",
             "height": "8961"
@@ -175,19 +175,19 @@ const dataWorks = {
     ],
     "sollux" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/sollux/1.webp",
+            "src": "/assets/img/works/sollux/1.webp",
             "alt": "sollux",
             "width": "1286",
             "height": "9620"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/sollux/2.webp",
+            "src": "/assets/img/works/sollux/2.webp",
             "alt": "sollux",
             "width": "1258",
             "height": "5619"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/sollux/3.webp",
+            "src": "/assets/img/works/sollux/3.webp",
             "alt": "sollux",
             "width": "1342",
             "height": "16383"
@@ -195,25 +195,25 @@ const dataWorks = {
     ],
     "telimena" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/telimena/1.webp",
+            "src": "/assets/img/works/telimena/1.webp",
             "alt": "telimena",
             "width": "1849",
             "height": "5257"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/telimena/2.webp",
+            "src": "/assets/img/works/telimena/2.webp",
             "alt": "telimena",
             "width": "1716",
             "height": "4343"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/telimena/3.webp",
+            "src": "/assets/img/works/telimena/3.webp",
             "alt": "telimena",
             "width": "1733",
             "height": "6839"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/telimena/4.webp",
+            "src": "/assets/img/works/telimena/4.webp",
             "alt": "telimena",
             "width": "1713",
             "height": "4601"
@@ -221,19 +221,19 @@ const dataWorks = {
     ],
     "ultraupgrate" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/ultraupgrate/1.webp",
+            "src": "/assets/img/works/ultraupgrate/1.webp",
             "alt": "ultraupgrate",
             "width": "2049",
             "height": "7408"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/ultraupgrate/2.webp",
+            "src": "/assets/img/works/ultraupgrate/2.webp",
             "alt": "ultraupgrate",
             "width": "1566",
             "height": "7673"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/ultraupgrate/3.webp",
+            "src": "/assets/img/works/ultraupgrate/3.webp",
             "alt": "ultraupgrate",
             "width": "1365",
             "height": "6111"
@@ -241,23 +241,98 @@ const dataWorks = {
     ],
     "welleundpartner" : [
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/welleundpartner/1.webp",
+            "src": "/assets/img/works/welleundpartner/1.webp",
             "alt": "welleundpartner",
             "width": "2560",
             "height": "5057"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/welleundpartner/2.webp",
+            "src": "/assets/img/works/welleundpartner/2.webp",
             "alt": "welleundpartner",
             "width": "2560",
             "height": "3479"
         },
         {
-            "src": "https://dmytrokovalenko.online/assets/img/works/welleundpartner/3.webp",
+            "src": "/assets/img/works/welleundpartner/3.webp",
             "alt": "welleundpartner",
             "width": "2560",
             "height": "4831"
         }
+    ],
+    "meininger" :[
+        {
+            "src": "/assets/img/works/meininger/0.webp",
+            "alt": "meininger",
+            "width": "2549",
+            "height": "9174"
+        },
+        {
+            "src": "/assets/img/works/meininger/1.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "919"
+        },
+        {
+            "src": "/assets/img/works/meininger/2.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "919"
+        },
+        {
+            "src": "/assets/img/works/meininger/3.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "2055"
+        },
+        {
+            "src": "/assets/img/works/meininger/4.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "1500"
+        },
+        {
+            "src": "/assets/img/works/meininger/5.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "956"
+        },
+        {
+            "src": "/assets/img/works/meininger/6.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "961"
+        },
+        {
+            "src": "/assets/img/works/meininger/7.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "1522"
+        },
+        {
+            "src": "/assets/img/works/meininger/8.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "3481"
+        },
+        {
+            "src": "/assets/img/works/meininger/9.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "2619"
+        },
+        {
+            "src": "/assets/img/works/meininger/10.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "2251"
+        },
+        {
+            "src": "/assets/img/works/meininger/11.webp",
+            "alt": "meininger",
+            "width": "2560",
+            "height": "1869"
+        },
+
     ]
 }
 
@@ -325,16 +400,11 @@ toInvoke(() => {
         origin: "top",
         distance: "40px",
         duration: 2000,
-        reset: true,
     });
-
-    sr.reveal(".home__content", {delay: 200});
-    sr.reveal(".home__img", {delay: 200});
-    sr.reveal(".home__social", {delay: 200});
 
     sr.reveal(".about__img", {});
     sr.reveal(".about__content", {delay: 400});
-    sr.reveal(".skills__wrapper", {delay: 400});
+    sr.reveal(".skills__wrapper", {delay: 400, cleanup: false});
     sr.reveal(".work__items .work__item", {interval: 200});
 
 }, 'desktop', 'main')
@@ -343,7 +413,6 @@ toInvoke(() => {
 toInvoke(() => {
 
     const showWorkButtons = document.querySelectorAll('#works .work__item .galery .btn')
-
 
     showWorkButtons.forEach(function (button) {
         button.addEventListener('click', (event) => {
