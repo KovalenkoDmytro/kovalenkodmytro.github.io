@@ -3,7 +3,7 @@
     color: $white_color;
     text-align: center;
     position: relative;
-    padding: 40px 0;
+    padding: 40px 25px;
     display: flex;
     flex-direction: column;
     &::before{
@@ -18,37 +18,173 @@
         z-index: -1;
       
     }
-    .footer_title{
-        font-size: 28px;
-        margin-bottom: 10px;
-        @include tablet{
-            font-size: 32px;
+    @include laptop{
+        padding: 70px 0 40px 0;
+    }
+    @include desktop{
+        max-width: 1300px;
+    }
+
+    .footer__wrapper{
+        @include laptop{
+            display: grid;
+            justify-items: start;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .wrapper__item{
+            &._right{
+                @include laptop{
+                    margin-left: 100px;
+                }
+            }
+            .item__title{
+                display: flex;
+                align-content: center;
+                align-items: center;
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-align: start;
+                @include laptop{
+                    font-size: 40px;
+                    margin-bottom: 20px;
+
+                }
+                @include desktop{
+                    font-size: 50px;
+                }
+                .icon{
+                    margin-left: 10px;
+                }
+            }
+            .contacts{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                column-gap: 50px;
+                @include tablet{
+                    flex-direction: row;
+                }
+                @include laptop{
+                    flex-direction: column;
+                }
+                @include desktop{
+                    flex-direction: row;
+                }
+
+                .contacts__item{
+                    .contacts__item__title{
+                        text-align: start;
+                        font-size: 14px;
+                        color: #c4c7c8;
+                        margin-bottom: 5px;
+                        text-transform: uppercase;
+                        @include tablet{
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .email{
+                        font-size: 20px;
+                        text-decoration: none;
+                        @include tablet{
+                            font-size: 24px;
+                        }
+                    }
+                    .socialMedia{
+                        display: flex;
+                        justify-content: flex-start;
+                        .socialMedia__link{
+                            display: block;
+                            position: relative;
+                            .icon{
+                                width: 30px;
+                                height: 30px;
+                            }
+
+                        }
+                        .socialMedia__link + .socialMedia__link{
+                            margin-left: 20px;
+                        }
+
+                    }
+                }
+                .contacts__item + .contacts__item{
+                    margin-top: 20px;
+                    @include tablet{
+                        margin-top: initial;
+                    }
+                    @include laptop{
+                        margin-top: 20px;
+                    }
+                    @include desktop{
+                        margin-top: initial;
+                    }
+                }
+            }
+            .person{
+                display: flex;
+                align-items: center;
+                align-content: center;
+                .person__photo{
+                    border-radius: 50%;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+
+                    img{
+                        height: 120px;
+                        width: 120px;
+                        @include tablet{
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
+                }
+                .person__about{
+                    margin-left: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    @include tablet{
+                        margin-left: 40px;
+                    }
+                    .person__name{
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        text-align: start;
+                        @include tablet{
+                            font-size: 30px;
+                        }
+                        @include laptop{
+                            font-size: 36px;
+                        }
+                    }
+                    .person__position{
+                        font-size: 18px;
+                        color: #c4c7c8;
+                    }
+                }
+            }
+
+        }
+        .wrapper__item +.wrapper__item{
+            margin-top: 25px;
+            @include laptop{
+                margin-top: initial;
+            }
         }
     }
-    .email,.copyright{
+
+
+
+    .copyright{
+        margin-top:30px;
         font-size: 14px;
         @include tablet{
             font-size: initial;
         }
-    }
-    .socialMedia{
-        margin: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .socialMedia__link{
-            display: block;
-            position: relative;
-            .icon{
-                width: 20px;
-                height: 20px;
-            }
-           
+        @include laptop{
+            margin-top:70px;
         }
-        .socialMedia__link + .socialMedia__link{
-            margin-left: 20px;
-        }
-        
     }
+
 
 }

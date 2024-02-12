@@ -342,14 +342,13 @@ toInvoke(() => {
 // to show galery when click on work thile 
 toInvoke(() => {
 
-    const showWorkButtons = document.querySelectorAll('#works .work__item .btn')
+    const showWorkButtons = document.querySelectorAll('#works .work__item .galery .btn')
 
 
     showWorkButtons.forEach(function (button) {
         button.addEventListener('click', (event) => {
             const galleryName = event.target.getAttribute('data-gallery')
             const dataSource = dataWorks[`${galleryName}`]
-            console.log(dataSource)
             const options = {
                 dataSource : dataSource,
                 mouseMovePan: true,
