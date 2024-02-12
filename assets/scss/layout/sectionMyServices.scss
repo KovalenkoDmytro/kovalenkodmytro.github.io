@@ -1,0 +1,114 @@
+.section.myServices{
+  margin-top: 0;
+  position: relative;
+  padding: 5px 0 30px;
+  @include laptop{
+    padding: 30px 0 40px;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    background-color: $secondary_color;
+    z-index: -1;
+  }
+  .myServices__container{
+    display: grid;
+    row-gap: 20px;
+
+    @include tablet{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      row-gap: initial;
+    }
+
+    .myServices__item{
+      .item__wrapper{
+        background-color: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 25px 5px;
+        @include laptop{
+          aspect-ratio: 1;
+          padding: initial;
+        }
+        @include desktop{
+          padding: 80px;
+          aspect-ratio: initial;
+        }
+        .icon{
+          width: 40px;
+          height: 40px;
+
+          @include laptop{
+            width: 75px;
+            height: 75px;
+            margin-bottom: 10px;
+          }
+        }
+        .item__title{
+          font-size: 18px;
+          margin-bottom: 5px;
+          @include laptop{
+            font-size: 23px;
+            margin-bottom: initial;
+          }
+
+        }
+        .item__text{
+          font-size: 12px;
+          color:#8d8d8d;
+          @include laptop{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+  }
+  .benefits__container{
+    display: grid;
+    row-gap: 20px;
+    margin-top: 20px;
+    @include tablet{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+      row-gap: initial;
+    }
+    .benefit{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      margin: 10px 0;
+     @include tablet{
+       margin: 30px 0 20px;
+     }
+      @include laptop{
+        margin-top: 40px;
+      }
+      .benefit__title{
+        font-size: 20px;
+        color: $link_color_hover;
+        @include tablet{
+          font-size: 34px;
+        }
+        @include laptop{
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}

@@ -33,9 +33,11 @@
     <nav class="navigation">
         <ul class="nav_list" id="navlist">
             <li class="nav_item"><p data-href="#home" class="nav_link">Home</p></li>
+            <li class="nav_item"><p data-href="#myServices" class="nav_link">My services</p></li>
             <li class="nav_item"><p data-href="#about" class="nav_link">About</p></li>
             <li class="nav_item"><p data-href="#skills" class="nav_link">Skills</p></li>
             <li class="nav_item"><p data-href="#works" class="nav_link">Projects</p></li>
+
         </ul>
         <a href="/assets/docs/Dmytro Kovalenko Resume.pdf" aria-label="Resume" target="_blank"
            class="btn _solid resumeLink">Download Resume</a>
@@ -86,7 +88,53 @@
             </a>
         </div>
     </section>
+    <!-- What can I do -->
+    <section class="myServices section" id="myServices">
+        <h2 class="section-title">What I am great at</h2>
 
+        <div class="myServices__container">
+            <div class="myServices__item">
+                <div class="item__wrapper">
+                    <span class="icon fluent--search-32-regular"></span>
+                    <p class="item__title">Web research</p>
+                    <p class="item__text">120 projects</p>
+                </div>
+
+            </div>
+            <div class="myServices__item">
+                <div class="item__wrapper">
+                    <span class="icon gravity-ui--code"></span>
+                    <p class="item__title">Web research</p>
+                    <p class="item__text">56 projects</p>
+                </div>
+
+            </div>
+            <div class="myServices__item">
+                <div class="item__wrapper">
+                    <span class="icon tabler--seo"></span>
+                    <p class="item__title">SEO</p>
+                    <p class="item__text">50 projects</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="benefits__container">
+            <div class="benefit">
+                <p class="benefit__title">5+</p>
+                <p class="benefit__text">Years of Experience</p>
+            </div>
+            <div class="benefit">
+                <p class="benefit__title">50+</p>
+                <p class="benefit__text">Satisfied clients</p>
+            </div>
+            <div class="benefit">
+                <p class="benefit__title">700+</p>
+                <p class="benefit__text">Created Items</p>
+            </div>
+        </div>
+
+    </section>
     <!-- ABOUT -->
     <section class="about section" id="about">
         <h2 class="section-title">About</h2>
