@@ -1,7 +1,7 @@
 //here is a general function to check selector exists and to invoke on choose viewport(mobile: - mobile and tablet devices/ desktop - PC / all - to invoke on all devices)
 
 const dataWorks = {
-    "comel" : [
+    "comel": [
         {
             "src": "/assets/img/works/comel/1.webp",
             "alt": "comel",
@@ -21,7 +21,7 @@ const dataWorks = {
             "height": "5192"
         }
     ],
-    "eviso" : [
+    "eviso": [
         {
             "src": "/assets/img/works/eviso/1.webp",
             "alt": "comel",
@@ -41,7 +41,7 @@ const dataWorks = {
             "height": "11201"
         }
     ],
-    "ezebra" : [
+    "ezebra": [
         {
             "src": "/assets/img/works/ezebra/1.webp",
             "alt": "ezebra",
@@ -61,7 +61,7 @@ const dataWorks = {
             "height": "7592"
         }
     ],
-    "nextEstate" : [
+    "nextEstate": [
         {
             "src": "/assets/img/works/nextEstate/1.webp",
             "alt": "gunfire",
@@ -93,7 +93,7 @@ const dataWorks = {
             "height": "4543"
         }
     ],
-    "gunfire" : [
+    "gunfire": [
         {
             "src": "/assets/img/works/gunfire/1.webp",
             "alt": "gunfire",
@@ -113,7 +113,7 @@ const dataWorks = {
             "height": "3824"
         }
     ],
-    "nizel" : [
+    "nizel": [
         {
             "src": "/assets/img/works/nizel/1.webp",
             "alt": "nizel",
@@ -133,7 +133,7 @@ const dataWorks = {
             "height": "4408"
         }
     ],
-    "pakolorente" : [
+    "pakolorente": [
         {
             "src": "/assets/img/works/pakolorente/1.webp",
             "alt": "pakolorente",
@@ -153,7 +153,7 @@ const dataWorks = {
             "height": "8961"
         }
     ],
-    "pinali" : [
+    "pinali": [
         {
             "src": "/assets/img/works/pinali/1.webp",
             "alt": "pinali",
@@ -173,7 +173,7 @@ const dataWorks = {
             "height": "8961"
         }
     ],
-    "sollux" : [
+    "sollux": [
         {
             "src": "/assets/img/works/sollux/1.webp",
             "alt": "sollux",
@@ -193,7 +193,7 @@ const dataWorks = {
             "height": "16383"
         }
     ],
-    "telimena" : [
+    "telimena": [
         {
             "src": "/assets/img/works/telimena/1.webp",
             "alt": "telimena",
@@ -219,7 +219,7 @@ const dataWorks = {
             "height": "4601"
         }
     ],
-    "ultraupgrate" : [
+    "ultraupgrate": [
         {
             "src": "/assets/img/works/ultraupgrate/1.webp",
             "alt": "ultraupgrate",
@@ -239,7 +239,7 @@ const dataWorks = {
             "height": "6111"
         }
     ],
-    "welleundpartner" : [
+    "welleundpartner": [
         {
             "src": "/assets/img/works/welleundpartner/1.webp",
             "alt": "welleundpartner",
@@ -259,7 +259,7 @@ const dataWorks = {
             "height": "4831"
         }
     ],
-    "meininger" :[
+    "meininger": [
         {
             "src": "/assets/img/works/meininger/0.webp",
             "alt": "meininger",
@@ -350,7 +350,36 @@ const toInvoke = function (callback, view = 'all', selector) {
         }
     }
 }
+toInvoke(() => {
 
+    const getIP = async () => {
+       return await fetch('https://api.db-ip.com/v2/free/self')
+            .then(response => response.json())
+    }
+    const toSendData = (data)=>{
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({'visitor': data})
+        };
+        fetch('/visitors.php', requestOptions)
+            .then(response => response.json())
+            .then(data => console.log(data));
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        let visitor ={
+            browser:navigator.userAgent,
+            languages :navigator.languages,
+            screenWidth : screen.availWidth,
+        }
+
+        await getIP().then(data =>
+            visitor = { ...visitor, city: data.city, continent: data.continentName, country : data.countryName,  ip: data.ipAddress, province: data.stateProv })
+
+        toSendData(visitor)
+    });
+}, 'all', 'main')
 
 toInvoke(() => {
     window.addEventListener("DOMContentLoaded", () => {
@@ -360,7 +389,6 @@ toInvoke(() => {
         });
     });
 }, 'all', 'main')
-
 
 
 toInvoke(() => {
@@ -419,7 +447,7 @@ toInvoke(() => {
             const galleryName = event.target.getAttribute('data-gallery')
             const dataSource = dataWorks[`${galleryName}`]
             const options = {
-                dataSource : dataSource,
+                dataSource: dataSource,
                 mouseMovePan: true,
                 wheelToZoom: true,
                 pswpModule: PhotoSwipe,
