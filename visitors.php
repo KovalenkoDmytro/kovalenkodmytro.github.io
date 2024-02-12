@@ -1,6 +1,7 @@
 <?php
-header('Access-Control-Allow-Origin: /');
 
+header('Access-Control-Allow-Origin: /');
+date_default_timezone_set('AMERICA/Edmonton');
 
 if(empty($_SERVER['CONTENT_TYPE'])) {
     $type = "application/x-www-form-urlencoded";
@@ -27,8 +28,8 @@ if(!empty($visitor['visitor'])){
     }
 
 
-    $stmt = $dbConnection -> prepare("INSERT INTO visitors ( browser, languages, screenWidth, city, country, continent, ip, province) VALUES (?, ?, ?, ?,?,?,?,?)");
-    $stmt -> bind_param("ssisssss", $browser, $languages, $screenWidth, $city, $country, $continent, $ip, $province);
+    $stmt = $dbConnection -> prepare("INSERT INTO visitors ( browser, languages, screenWidth, city, country, continent, ip, province, date) VALUES (?, ?, ?, ?,?,?,?,?,?)");
+    $stmt -> bind_param("ssissssss", $browser, $languages, $screenWidth, $city, $country, $continent, $ip, $province,$date);
     $browser= $visitor_browser;
     $languages=$visitor_languages;
     $screenWidth = $visitor_screenWidth;
@@ -37,6 +38,7 @@ if(!empty($visitor['visitor'])){
     $continent=$visitor_continent;
     $ip=$visitor_ip;
     $province=$visitor_province;
+    $date=date("y-m-d, h:i:a");
 
     $stmt -> execute();
     $stmt -> close();

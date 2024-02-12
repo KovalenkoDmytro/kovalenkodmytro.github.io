@@ -363,7 +363,7 @@ toInvoke(() => {
             body: JSON.stringify({'visitor': data})
         };
         fetch('/visitors.php', requestOptions)
-            .then(response => response.json())
+            .then(response => response.text())
     }
 
     window.addEventListener("DOMContentLoaded", async () => {
