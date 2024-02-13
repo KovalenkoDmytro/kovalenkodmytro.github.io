@@ -19,6 +19,7 @@ if(!empty($visitor['visitor'])){
     $visitor_country=strip_tags(trim($visitor['visitor']['country']));
     $visitor_ip=strip_tags(trim($visitor['visitor']['ip']));
     $visitor_province=strip_tags(trim($visitor['visitor']['province']));
+    $visitor_referrer=strip_tags(trim($visitor['visitor']['referrer']));
 
     $dbConnection = new mysqli('serwer2423046.home.pl:3380', '38223950_portfolio', 'Malma2033!', '38223950_portfolio');
 
@@ -28,8 +29,8 @@ if(!empty($visitor['visitor'])){
     }
 
 
-    $stmt = $dbConnection -> prepare("INSERT INTO visitors ( browser, languages, screenWidth, city, country, continent, ip, province, date) VALUES (?, ?, ?, ?,?,?,?,?,?)");
-    $stmt -> bind_param("ssissssss", $browser, $languages, $screenWidth, $city, $country, $continent, $ip, $province,$date);
+    $stmt = $dbConnection -> prepare("INSERT INTO visitors ( browser, languages, screenWidth, city, country, continent, ip, province, date,referrer) VALUES (?, ?, ?, ?,?,?,?,?,?,?)");
+    $stmt -> bind_param("ssisssssss", $browser, $languages, $screenWidth, $city, $country, $continent, $ip, $province,$date, $referrer);
     $browser= $visitor_browser;
     $languages=$visitor_languages;
     $screenWidth = $visitor_screenWidth;
@@ -39,6 +40,7 @@ if(!empty($visitor['visitor'])){
     $ip=$visitor_ip;
     $province=$visitor_province;
     $date=date("y-m-d, h:i:a");
+    $referrer = $visitor_referrer;
 
     $stmt -> execute();
     $stmt -> close();

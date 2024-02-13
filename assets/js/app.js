@@ -370,6 +370,7 @@ toInvoke(() => {
         let visitor ={
             browser:navigator.userAgent,
             languages :navigator.languages,
+            referrer: document.referrer,
             screenWidth : screen.availWidth,
         }
 
