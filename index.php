@@ -104,7 +104,7 @@
             <div class="myServices__item">
                 <div class="item__wrapper">
                     <span class="icon gravity-ui--code"></span>
-                    <p class="item__title">Web research</p>
+                    <p class="item__title">Web development</p>
                     <p class="item__text">56 projects</p>
                 </div>
 
