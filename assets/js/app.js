@@ -1,6 +1,32 @@
 //here is a general function to check selector exists and to invoke on choose viewport(mobile: - mobile and tablet devices/ desktop - PC / all - to invoke on all devices)
 
 const dataWorks = {
+    "belike": [
+        {
+            "src": "/assets/img/works/belike/1.webp",
+            "alt": "belike",
+            "width": "1359",
+            "height": "7834"
+        },
+        {
+            "src": "/assets/img/works/belike/2.webp",
+            "alt": "belike",
+            "width": "2552",
+            "height": "4041"
+        },
+        {
+            "src": "/assets/img/works/belike/3.webp",
+            "alt": "belike",
+            "width": "2552",
+            "height": "5212"
+        },
+        {
+            "src": "/assets/img/works/belike/4.webp",
+            "alt": "belike",
+            "width": "2552",
+            "height": "5524"
+        }
+    ],
     "comel": [
         {
             "src": "/assets/img/works/comel/1.webp",
@@ -446,6 +472,7 @@ toInvoke(() => {
         button.addEventListener('click', (event) => {
             const galleryName = event.target.getAttribute('data-gallery')
             const dataSource = dataWorks[`${galleryName}`]
+            console.log(dataSource)
             const options = {
                 dataSource: dataSource,
                 mouseMovePan: true,

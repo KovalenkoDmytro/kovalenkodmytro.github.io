@@ -58,7 +58,7 @@
                         id="autoWrite"></span><span class="_mobile">Full-stack developer</span>
                 <p>
                 <div class="shortDescription">
-                    <p>Through my experience in ReactJS and Laravel PHP, I have honed my skills in creating web, and
+                    <p>Through my experience in ReactJS, Laravel PHP and WordPress, I have honed my skills in creating web, and
                         database architecture, building front and back-end from scratch to modern web applications based
                         on
                         visually stunning designs that are both functional and intuitive.</p>
@@ -157,7 +157,7 @@
                         challenges, I am eager for personal growth, and contribute my expertise to dynamic projects that
                         demand creativity and technical excellence. </p>
                 </div>
-                <a href="/assets/docs/Dmytro Kovalenko Resume.pdf" aria-label="Resume" target="_blank"
+                <a href="/assets/docs/Dmytro_Kovalenko_Resume.pdf" aria-label="Resume" target="_blank"
                    class="btn _solid">Download Resume</a>
             </div>
         </div>
@@ -237,6 +237,17 @@
         <h2 class="section-title">Featured projects</h2>
 
         <div class="work__items">
+            <div class="work__item">
+                <a class="link__title" href="https://belikeagency.ca/" rel=”nofollow” aria-label="belike"
+                   title="belike" target="_blank">belikeagency</a>
+                <div class="galery">
+                    <div class="images">
+                        <img class="b-lazy" src="/assets/img/loader.svg"
+                             data-src="/assets/img/works/belike/thumbnail.webp" alt="belike"/>
+                    </div>
+                    <span class="btn _second" data-gallery="belike">see preview</span>
+                </div>
+            </div>
             <div class="work__item">
                 <a class="link__title" href="https://www.meininger-hotels.com/en/" rel=”nofollow” aria-label="meininger"
                    title="meininger" target="_blank">meininger</a>
