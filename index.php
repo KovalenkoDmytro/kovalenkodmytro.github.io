@@ -39,7 +39,7 @@
             <li class="nav_item"><p data-href="#works" class="nav_link">Projects</p></li>
 
         </ul>
-        <a href="/assets/docs/Dmytro Kovalenko Resume.pdf" aria-label="Resume" target="_blank"
+        <a href="/assets/docs/Dmytro_Kovalenko_Resume.pdf" aria-label="Resume" target="_blank"
            class="btn _solid resumeLink">Download Resume</a>
     </nav>
     <div class="nav__toggle" id="navToggle">
