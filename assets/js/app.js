@@ -472,7 +472,6 @@ toInvoke(() => {
         button.addEventListener('click', (event) => {
             const galleryName = event.target.getAttribute('data-gallery')
             const dataSource = dataWorks[`${galleryName}`]
-            console.log(dataSource)
             const options = {
                 dataSource: dataSource,
                 mouseMovePan: true,
