@@ -39,8 +39,6 @@
             <li class="nav_item"><p data-href="#works" class="nav_link">Projects</p></li>
 
         </ul>
-        <a href="/assets/docs/Dmytro_Kovalenko_Resume.pdf" aria-label="Resume" target="_blank"
-           class="btn _solid resumeLink">Download Resume</a>
     </nav>
     <div class="nav__toggle" id="navToggle">
         <span class="iconamoon--menu-burger-horizontal-fill"></span>
@@ -469,7 +467,7 @@
 <script src="assets/js/vendor/typeWriter.min.js"></script>
 <script src="assets/js/vendor/particles.min.js"></script>
 <script src="assets/js/vendor/smoothscroll.min.js"></script>
-<script src="assets/js/app.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 
 </html>
