@@ -155,8 +155,6 @@
                         challenges, I am eager for personal growth, and contribute my expertise to dynamic projects that
                         demand creativity and technical excellence. </p>
                 </div>
-                <a href="/assets/docs/Dmytro_Kovalenko_Resume.pdf" aria-label="Resume" target="_blank"
-                   class="btn _solid">Download Resume</a>
             </div>
         </div>
     </section>
